@@ -2,7 +2,7 @@
 
 @section('content')
 <h4><strong>Chettra </strong></h4>
-    <div class="row pt-2">
+    <div class="row">
         {{-- @foreach($users as $user) --}}
             <div class="col-md-3 col-lg-3 mb-3">
                 <div class="card">

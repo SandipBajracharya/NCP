@@ -83,9 +83,9 @@
         </nav> --}}
         @include('inc.topDesign')
         @include('inc.navbar')
-            <marquee width="100%" direction="left" height="21em" scrollamount="10" style="background-color: #fff3cd;"><a>
-                <a href="anchorstyle">This is a marque. </a>
-                <a href="anchorstyle">This is a marque text two. </a>
+            <marquee width="100%" direction="left" height="21em" scrollamount="8" style="background-color: #fff3cd;"><a>
+                <a href="https://nepalkhabar.com/politics/33931-2020-08-04-10-25-11" style="text-decoration: none; color:black;"><i class="fa fa-circle" aria-hidden="true"></i> प्रधानमन्त्रीले बोलाउनु भएको आजको बैठकमा नेपाली कांग्रेसका तर्फबाट सभापति शेरबहादुर देउवाले राख्नु भएको ७ बुंदे सुझाव र माग । </a>
+                <a href="https://ekantipur.com/news/2020/07/03/159377763026095477.html"  style="text-decoration: none; color:black;"><i class="fa fa-circle" aria-hidden="true"></i> नेपाली कांग्रेस कोभिड�१९ अनुगमन समितिको श्रावण ९ गतेको पत्रकार सम्मेलनमा वितरित प्रेस विज्ञप्ति </a>
             </marquee>
         <main class="container p-4">
             <div class="row">
