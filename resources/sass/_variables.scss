@@ -1,0 +1,79 @@
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+$font-family-sans-serif: 'Nunito', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Colors
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+$cream: #fffcf8;
+
+//navbar
+.topnav {
+    background-color: #2e6faf;
+}
+
+.topnav ul {
+    width: 100%;
+}
+
+.topnav ul li a {
+    color: white !important;
+    border-bottom: 3px solid #2e6faf;
+    padding-bottom: 4px;
+}
+
+.topnav ul li a:hover {
+    border-bottom: 3px solid $cream;
+}
+//end of topnav
+
+//sidebar
+.a-hover a:hover {
+    background-color: $blue;
+    color: #ffffff;
+}
+//end of sidebar
+
+//link and anchor style
+.liststyle li{
+    list-style: none;
+}
+
+.anchorstyle li a{
+    text-decoration: none;
+    color: black;
+}
+
+.anchorstyle li a:hover {
+    color: #3490dc;
+}
+
+//Feedback form width
+.feedback {
+    width: 22rem !important;
+}
+
+@media only screen and (max-width: 600px){
+    .feedback-ao {
+        width: 100% !important;
+    }
+}
+
+.main-footer {
+    min-height: 5vw;
+    background-color: #2e6faf; 
+    color:#ffffff;
+    padding: 15px 130px !important; 
+}
