@@ -14,6 +14,6 @@ class ElectionCommitteeController extends Controller
 
     public function showChetra()
     {
-        return view('Pages/ElectionCommittee/chettra1');
+        return view('Pages.chettraOne');
     }
 }
