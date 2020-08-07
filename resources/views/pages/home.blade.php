@@ -5,27 +5,27 @@
     <h5><strong>Former Leaders</strong></h5>
     <div class="row px-2">
         <div class="col-md-2 card-lg-2 px-1">
-            <img src="storage/Leaders/BP_koirala.jpg" class="card-img-top p-1">
+            <img src="public/storage/Leaders/BP_koirala.jpg" class="card-img-top p-1">
             <p class="text-center font-weight-bold" style="">Bisheshwor Prasad Koirala</p>
         </div>
         <div class="col-md-2 card-lg-2 px-1">
-            <img src="storage/Leaders/Ganesh_man_singh.jpg" class="card-img-top p-1">
+            <img src="public/storage/Leaders/Ganesh_man_singh.jpg" class="card-img-top p-1">
             <p class="text-center font-weight-bold">Ganesh Man Singh</p>
         </div>
         <div class="col-md-2 card-lg-2 px-1">
-            <img src="storage/Leaders/Subarna_Samsher_Rana.jpg" class="card-img-top p-1">
+            <img src="public/storage/Leaders/Subarna_Samsher_Rana.jpg" class="card-img-top p-1">
             <p class="text-center font-weight-bold">Subarna Samsher Rana</p>
         </div>
         <div class="col-md-2 card-lg-2 px-1">
-            <img src="storage/Leaders/Krishna_Prasad_Bhattarai.jpg" class="card-img-top p-1">
+            <img src="public/storage/Leaders/Krishna_Prasad_Bhattarai.jpg" class="card-img-top p-1">
             <p class="text-center font-weight-bold">Krishna Prasad Bhattrai</p>
         </div>
         <div class="col-md-2 card-lg-2 px-1">
-            <img src="storage/Leaders/Girija_Prasad_koirala.jpg" class="card-img-top p-1">
+            <img src="public/storage/Leaders/Girija_Prasad_koirala.jpg" class="card-img-top p-1">
             <p class="text-center font-weight-bold">Girija Prasad Koirala</p>
         </div>
         <div class="col-md-2 card-lg-2 px-1">
-            <img src="storage/Leaders/Sushil_Koirala.jpg" class="card-img-top p-1">
+            <img src="public/storage/Leaders/Sushil_Koirala.jpg" class="card-img-top p-1">
             <p class="text-center font-weight-bold">Sushil Koirala</p>
         </div>
     </div>
