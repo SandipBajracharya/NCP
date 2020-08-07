@@ -25,7 +25,7 @@
             <p class="text-center font-weight-bold">Girija Prasad Koirala</p>
         </div>
         <div class="col-md-2 card-lg-2 px-1">
-            <img src="/storage/Leaders/Sushil_Koirala.jpg" class="card-img-top p-1">
+            <img src="/storage/Leaders/Sushil_koirala.jpg" class="card-img-top p-1">
             <p class="text-center font-weight-bold">Sushil Koirala</p>
         </div>
     </div>
