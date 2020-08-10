@@ -1,0 +1,18 @@
+<div class="list-group a-hover">                       
+    <a href="" class="list-group-item list-group-item-action d-flex"><div class="col-2 float-right"> <i class="fa fa-search" aria-hidden="true"></i></div><div class="col-10 pl-1"> Central Working Committee</div></a>
+    <a href="" class="list-group-item list-group-item-action d-flex"><div class="col-2 float-right"> <i class="fa fa-search" aria-hidden="true"></i></div><div class="col-10 pl-1"> Central Departmant and Committee</div></a>
+    <a href="" class="list-group-item list-group-item-action d-flex"><div class="col-2 float-right"> <i class="fa fa-search" aria-hidden="true"></i></div><div class="col-10 pl-1"> Central Policy, Research and Training Academy</div></a>
+    <a href="" class="list-group-item list-group-item-action d-flex"><div class="col-2 pr-0"> <i class="fa fa-search" aria-hidden="true"></i></div><div class="col-10 pl-1"> Party Constitution</div></a>
+    <a href="" class="list-group-item list-group-item-action d-flex"><div class="col-2 float-right"> <i class="fa fa-search" aria-hidden="true"></i></div><div class="col-10 pl-1"> Manifesto</div></a>
+    <a href="" class="list-group-item list-group-item-action d-flex"><div class="col-2 float-right"> <i class="fa fa-search" aria-hidden="true"></i></div><div class="col-10 pl-1"> Rules and Regulations</div></a>
+    <a href="" class="list-group-item list-group-item-action d-flex"><div class="col-2 float-right"> <i class="fa fa-search" aria-hidden="true"></i></div><div class="col-10 pl-1"> National Conventions</div></a>
+    <a href="" class="list-group-item list-group-item-action d-flex"><div class="col-2 float-right"> <i class="fa fa-search" aria-hidden="true"></i></div><div class="col-10 pl-1"> General Counsils</div></a>
+    <a href="" class="list-group-item list-group-item-action d-flex"><div class="col-2 float-right"> <i class="fa fa-search" aria-hidden="true"></i></div><div class="col-10 pl-1"> CA Election 2070</div></a>
+    <a href="" class="list-group-item list-group-item-action d-flex"><div class="col-2 float-right"> <i class="fa fa-search" aria-hidden="true"></i></div><div class="col-10 pl-1"> District Presidents</div></a>
+    <a href="" class="list-group-item list-group-item-action d-flex"><div class="col-2 float-right"> <i class="fa fa-search" aria-hidden="true"></i></div><div class="col-10 pl-1"> Constituency President</div></a>
+    <a href="" class="list-group-item list-group-item-action d-flex"><div class="col-2 float-right"> <i class="fa fa-search" aria-hidden="true"></i></div><div class="col-10 pl-1"> Sister and Well Wisher Organizations</div></a>
+    <a href="" class="list-group-item list-group-item-action d-flex"><div class="col-2 float-right"> <i class="fa fa-search" aria-hidden="true"></i></div><div class="col-10 pl-1"> Press Release</div></a>
+    <a href="" class="list-group-item list-group-item-action d-flex"><div class="col-2 float-right"> <i class="fa fa-search" aria-hidden="true"></i></div><div class="col-10 pl-1"> Nepali Jansamparka Samiti</div></a>
+    <a href="" class="list-group-item list-group-item-action d-flex"><div class="col-2 float-right"> <i class="fa fa-search" aria-hidden="true"></i></div><div class="col-10 pl-1"> Information Officer</div></a>
+    <a href="" class="list-group-item list-group-item-action d-flex"><div class="col-2 float-right"> <i class="fa fa-search" aria-hidden="true"></i></div><div class="col-10 pl-1"> Circular</div></a>
+   </div>

@@ -13,11 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('pages.home');
-});
+// Route::redirect('/','/en');
 
-Auth::routes();
+// Route::group(['prefix'=>'{language}'], function () {
+Route::get('/', 'Pages\HomeController@index')->name('home');
 
 Route::get('/introduction', 'Pages\IntroductionController@index')->name('introduction');
 
@@ -30,3 +29,22 @@ Route::post('/feedback', 'Pages\FeedbackController@storeForm');
 
 Route::get('/electioncommittee','Pages\ElectionCommitteeController@showIndex')->name('electionCommittee');
 Route::get('/electioncommittee/chetra','Pages\ElectionCommitteeController@showChetra')->name('electionCommitteeChetra');
+
+
+// Admin
+Route::get('/dashboard', function (){
+    return view('admin.Dashboard');
+})->middleware('auth');
+
+Route::group(['prefix' => 'NCadmin'], function() {
+    Auth::routes();
+});
+
+Route::resource('/pressrelease','Admin\PressReleaseController');
+
+Route::get('/admin/introduction','Admin\IntroductionController@introductionForm')->name('introductionForm');
+Route::put('/admin/introduction/{id}','Admin\IntroductionController@storeContent')->name('introductionUpdate');
+
+Route::get('/admin/contacts','Admin\ContactController@contactForm')->name('contactForm');
+Route::put('/admin/contacts/{id}','Admin\ContactController@storeContact')->name('contactUpdate');
+// });

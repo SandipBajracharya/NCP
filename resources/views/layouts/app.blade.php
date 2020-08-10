@@ -20,7 +20,7 @@
     <link href="/css/app.css" rel="stylesheet">
 
     {{-- Font Awesome --}}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
 
     {{-- tabbed pane --}}
     {{-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -87,33 +87,16 @@
         </nav> --}}
         @include('inc.topDesign')
         @include('inc.navbar')
-            <marquee width="100%" direction="left" height="21em" scrollamount="8" style="background-color: #fff3cd;"><a>
+            {{-- <marquee width="100%" direction="left" height="21em" scrollamount="8" style="background-color: #fff3cd;"><a>
                 <a href="https://nepalkhabar.com/politics/33931-2020-08-04-10-25-11" style="text-decoration: none; color:black;"><i class="fa fa-circle" aria-hidden="true"></i> प्रधानमन्त्रीले बोलाउनु भएको आजको बैठकमा नेपाली कांग्रेसका तर्फबाट सभापति शेरबहादुर देउवाले राख्नु भएको ७ बुंदे सुझाव र माग । </a>
                 <a href="https://ekantipur.com/news/2020/07/03/159377763026095477.html"  style="text-decoration: none; color:black;"><i class="fa fa-circle" aria-hidden="true"></i> नेपाली कांग्रेस कोभिड�१९ अनुगमन समितिको श्रावण ९ गतेको पत्रकार सम्मेलनमा वितरित प्रेस विज्ञप्ति </a>
-            </marquee>
+            </marquee> --}}
         <main class="container p-4">
             <div class="row">
 
                 <div class="col-md-3 col-sm-3">
-                    <h4><strong> Quick Links</strong></h4>
-                   <div class="list-group a-hover">
-                    <a href="" class="list-group-item list-group-item-action d-flex"><div class="col-2 pr-0"> <i class="fa fa-search" aria-hidden="true"></i></div><div class="col-10 pl-1"> Party Constitution</div></a>
-                    <a href="" class="list-group-item list-group-item-action d-flex"><div class="col-2 float-right"> <i class="fa fa-search" aria-hidden="true"></i></div><div class="col-10 pl-1"> Manifesto</div></a>
-                    <a href="" class="list-group-item list-group-item-action d-flex"><div class="col-2 float-right"> <i class="fa fa-search" aria-hidden="true"></i></div><div class="col-10 pl-1"> Rules and Regulations</div></a>
-                    <a href="" class="list-group-item list-group-item-action d-flex"><div class="col-2 float-right"> <i class="fa fa-search" aria-hidden="true"></i></div><div class="col-10 pl-1"> National Conventions</div></a>
-                    <a href="" class="list-group-item list-group-item-action d-flex"><div class="col-2 float-right"> <i class="fa fa-search" aria-hidden="true"></i></div><div class="col-10 pl-1"> General Counsils</div></a>
-                    <a href="" class="list-group-item list-group-item-action d-flex"><div class="col-2 float-right"> <i class="fa fa-search" aria-hidden="true"></i></div><div class="col-10 pl-1"> CA Election 2070</div></a>
-                    <a href="" class="list-group-item list-group-item-action d-flex"><div class="col-2 float-right"> <i class="fa fa-search" aria-hidden="true"></i></div><div class="col-10 pl-1"> Central Working Committee</div></a>
-                    <a href="" class="list-group-item list-group-item-action d-flex"><div class="col-2 float-right"> <i class="fa fa-search" aria-hidden="true"></i></div><div class="col-10 pl-1"> Central Departmant and Committee</div></a>
-                   <a href="" class="list-group-item list-group-item-action d-flex"><div class="col-2 float-right"> <i class="fa fa-search" aria-hidden="true"></i></div><div class="col-10 pl-1"> District Presidents</div></a>
-                   <a href="" class="list-group-item list-group-item-action d-flex"><div class="col-2 float-right"> <i class="fa fa-search" aria-hidden="true"></i></div><div class="col-10 pl-1"> Constituency President</div></a>
-                   <a href="" class="list-group-item list-group-item-action d-flex"><div class="col-2 float-right"> <i class="fa fa-search" aria-hidden="true"></i></div><div class="col-10 pl-1"> Manifeso</div></a>
-                   <a href="" class="list-group-item list-group-item-action d-flex"><div class="col-2 float-right"> <i class="fa fa-search" aria-hidden="true"></i></div><div class="col-10 pl-1"> Manifeso</div></a>
-                   <a href="" class="list-group-item list-group-item-action d-flex"><div class="col-2 float-right"> <i class="fa fa-search" aria-hidden="true"></i></div><div class="col-10 pl-1"> Manifeso</div></a>
-                   <a href="" class="list-group-item list-group-item-action d-flex"><div class="col-2 float-right"> <i class="fa fa-search" aria-hidden="true"></i></div><div class="col-10 pl-1"> Manifeso</div></a>
-                   <a href="" class="list-group-item list-group-item-action d-flex"><div class="col-2 float-right"> <i class="fa fa-search" aria-hidden="true"></i></div><div class="col-10 pl-1"> Manifeso</div></a>
-                   <a href="" class="list-group-item list-group-item-action d-flex"><div class="col-2 float-right"> <i class="fa fa-search" aria-hidden="true"></i></div><div class="col-10 pl-1"> Manifeso</div></a>
-                   </div>
+                <h4><strong> {{__('Quick Links')}}</strong></h4>
+                    @include('inc.sidebar')
                 </div>
                 <div class="col-md-9 col-sm-9">
                     @yield('content')
@@ -127,6 +110,6 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    {{-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> --}}
 </body>
 </html>

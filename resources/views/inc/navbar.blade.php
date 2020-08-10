@@ -8,28 +8,28 @@
             <!-- Left Side Of Navbar -->
             <ul class="navbar-nav justify-content-between mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/">Home</a>
+                    <a class="nav-link" href="/">{{ __('Home')}}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/introduction">Introduction</a>
+                    <a class="nav-link" href="/introduction">{{ __('Introduction')}}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">History</a>
+                    <a class="nav-link" href="/introduction">{{ __('History')}}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/relatedlinks">Related Links</a>
+                    <a class="nav-link" href="/relatedlinks">{{ __('Related Links')}}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Online Gallery</a>
+                    <a class="nav-link" href="#">{{ __('Online Gallery')}}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/feedback">Feedback</a>
+                    <a class="nav-link" href="/feedback">{{ __('Feedback')}}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/electioncommittee">Election Committee</a>
+                    <a class="nav-link" href="/electioncommittee">{{ __('Election Committee')}}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/contacts">Contacts</a>
+                    <a class="nav-link" href="/contacts">{{ __('Contacts')}}</a>
                 </li>
             </ul>
 
