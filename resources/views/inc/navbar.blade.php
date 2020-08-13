@@ -23,7 +23,7 @@
                     <a class="nav-link" href="#">{{ __('Online Gallery')}}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/feedback">{{ __('Feedback')}}</a>
+                    <a class="nav-link" href="/feedback/create">{{ __('Feedback')}}</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/electioncommittee">{{ __('Election Committee')}}</a>

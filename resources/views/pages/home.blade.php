@@ -4,32 +4,34 @@
 {{-- <div class="container"> --}}
     @include('messages.message')
     <h4><strong>{{__('Leaders')}}</strong></h4>
+    @if($leaders)
     <div class="row px-2">
-        <div class="col-md-2 card-lg-2 px-1">
-            <img src="/storage/Leaders/SD.jpg" class="card-img-top p-1">
-            <p class="text-center" style="">{{__('Party President')}}</p>
+        <div class="col-md-2 card-lg-2 col-4 px-1">
+            <img src="/storage/DistrictLeaders/noimage.jpg" style="" class="card-img-top district-leaders p-1">
+            <p class="text-center" style="">{{__('District President')}}</p>
         </div>
-        <div class="col-md-2 card-lg-2 px-1">
-            <img src="/storage/Leaders/" class="card-img-top p-1">
-            <p class="text-center">{{__('Party Vice President')}}</p>
+        <div class="col-md-2 card-lg-2 col-4 px-1">
+            <img src="/storage/DistrictLeaders/noimage.jpg" style="" class="card-img-top district-leaders  p-1">
+            <p class="text-center">{{__('District Vice President')}}</p>
         </div>
-        <div class="col-md-2 card-lg-2 px-1">
-            <img src="/storage/Leaders/" class="card-img-top p-1">
+        <div class="col-md-2 card-lg-2 col-4 px-1">
+            <img src="/storage/DistrictLeaders/noimage.jpg" style="" class="card-img-top district-leaders p-1">
             <p class="text-center">{{__('Member1')}}</p>
         </div>
-        <div class="col-md-2 card-lg-2 px-1">
-            <img src="/storage/Leaders/" class="card-img-top p-1">
+        <div class="col-md-2 card-lg-2 col-4 px-1">
+            <img src="/storage/DistrictLeaders/noimage.jpg" style="" class="card-img-top district-leaders p-1">
             <p class="text-center">{{__('Member2')}}</p>
         </div>
-        <div class="col-md-2 card-lg-2 px-1">
-            <img src="/storage/Leaders/" class="card-img-top p-1">
+        <div class="col-md-2 card-lg-2 col-4 px-1">
+            <img src="/storage/DistrictLeaders/noimage.jpg" style="" class="card-img-top district-leaders p-1">
             <p class="text-center">{{__('Member3')}}</p>
         </div>
-        <div class="col-md-2 card-lg-2 px-1">
-            <img src="/storage/Leaders/" class="card-img-top p-1">
+        <div class="col-md-2 card-lg-2 col-4 px-1">
+            <img src="/storage/DistrictLeaders/noimage.jpg" style="" class="card-img-top district-leaders p-1">
             <p class="text-center">{{__('Member4')}}</p>
         </div>
     </div>
+    @endif
     <hr>
     {{-- <div class="col-sm-12">
         <div class="row justify-content-between px-3">

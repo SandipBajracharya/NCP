@@ -12,7 +12,7 @@
 </div>
 
 <div class="col-sm-6 ml-3 mb-2">
-    <a href="/admin/pressrelease" class="btn btn-info btn-sm "><i class="fa fa-arrow-left" aria-hidden="true"></i> {{_('Back')}}</a> 
+    <a href="/pressrelease" class="btn btn-info btn-sm "><i class="fa fa-arrow-left" aria-hidden="true"></i> {{_('Back')}}</a> 
 </div>
 
 <div class="col-md-8 offset-md-2">

@@ -28,6 +28,7 @@ class IntroductionController extends Controller
         ]);
 
         $post = Introduction::find($id);
+        // $textToStore = nl2br(htmlentities($request->input('background'), ENT_QUOTES, 'UTF-8'));
         $post->background = $request->input('background');
         $post->genesis_of_NC = $request->input('genesis_of_NC');
         $post->imp_landmarks = $request->input('imp_landmarks');

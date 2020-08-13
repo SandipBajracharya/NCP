@@ -89,21 +89,27 @@
                 </a>
               </li>
 
-              <li class="nav-header">FIELDS</li>
+              <li class="nav-header">NAVBAR</li>
               <li class="nav-item has-treeview">
                 <a href="#" class="nav-link">
                   <i class="nav-icon fas fa-home"></i>
                   <p>
                     Home page
                     <i class="fas fa-angle-left right"></i>
-                    <span class="badge badge-info right">2</span>
+                    <span class="badge badge-info right">3</span>
                   </p>
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
+                    <li class="nav-item">
+                      <a href="/admin/leaders" class="nav-link">
+                        <i class="fas fa-users nav-icon"></i>
+                        <p>District Leaders</p>
+                      </a>
+                    </li>
                     <li class="nav-item has-treeview">
                       <a href="#" class="nav-link">
-                        <i class="fa fa-newspaper" aria-hidden="true"></i>
+                        <i class="fa fa-newspaper nav-icon" aria-hidden="true"></i>
                         <p>
                           Press Release
                           <i class="fas fa-angle-left right"></i>
@@ -129,7 +135,7 @@
                   <li class="nav-item">
                     <li class="nav-item has-treeview">
                       <a href="#" class="nav-link">
-                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <i class="fa fa-calendar nav-icon" aria-hidden="true"></i>
                         <p>
                           upcoming Events 
                           <i class="fas fa-angle-left right"></i>
@@ -162,6 +168,38 @@
                   </p>
                 </a>
               </li>
+              <li class="nav-item has-treeview">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-link"></i>
+                  <p>
+                    Related Links
+                    <i class="fas fa-angle-left right"></i>
+                    <span class="badge badge-info right">2</span>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="/admin/relatedlinks/create" class="nav-link">
+                      <i class="far fa-square nav-icon"></i>
+                      <p>Create</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/admin/relatedlinks" class="nav-link">
+                      <i class="far fa-square nav-icon"></i>
+                      <p>Content List</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="/feedback" class="nav-link">
+                  <i class="nav-icon fas fa-comments"></i>
+                  <p>
+                    Feedbacks
+                  </p>
+                </a>
+              </li>
               <li class="nav-item">
                 <a href="/admin/contacts" class="nav-link">
                   <i class="nav-icon fas fa-phone"></i>
@@ -170,6 +208,32 @@
                   </p>
                 </a>
               </li>
+              <li class="nav-header">QUICK LINKS</li>
+              <li class="nav-item has-treeview">
+                <a href="#" class="nav-link">
+                  <i class="fa fa-newspaper" aria-hidden="true"></i>
+                  <p>
+                    Party Constitution
+                    <i class="fas fa-angle-left right"></i>
+                    <span class="badge badge-info right">2</span>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="/partyconstitution/create" class="nav-link">
+                      <i class="far fa-square nav-icon"></i>
+                      <p>Create</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/partyconstitution" class="nav-link">
+                      <i class="far fa-square nav-icon"></i>
+                      <p>Content List</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
             </ul>
           </nav>
           <!-- /.sidebar-menu -->
