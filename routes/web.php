@@ -25,7 +25,7 @@ Route::get('/relatedlinks', 'Pages\RelatedLinksController@index')->name('related
 Route::get('/contacts', 'Pages\ContactController@index')->name('contact');
 
 Route::get('/electioncommittee','Pages\ElectionCommitteeController@showIndex')->name('electionCommittee');
-Route::get('/electioncommittee/chetra','Pages\ElectionCommitteeController@showChetra')->name('electionCommitteeChetra');
+Route::get('/electioncommittee/chettra/{id}','Pages\ElectionCommitteeController@showChetra')->name('electionCommitteeChetra');
 
 
 /*  Admin   */
@@ -39,6 +39,9 @@ Route::group(['prefix' => 'NCadmin'], function() {
 
 //press release
 Route::resource('/pressrelease','Admin\PressReleaseController');
+
+//Upcoming Events
+Route::resource('/upcomingevents','Admin\UpcomingEventsController');
 
 //introduction
 Route::get('/admin/introduction','Admin\IntroductionController@introductionForm')->name('introductionForm');
@@ -58,8 +61,24 @@ Route::put('/admin/leaders/{id}','Admin\DistrictLeadersController@storeForm')->n
 //Related Links
 Route::resource('/admin/relatedlinks','Admin\RelatedLinksController');
 
-//Online Gallery
+//Online Gallery (Admin)
 Route::resource('/admin/onlinegallery','Admin\OnlineGalleryController');
+//online gallery (pages)
+Route::get('/onlinegallery','Pages\OnlineGalleryController@index')->name('OnlineGallery');
+Route::get('/onlinegallery/photos','Pages\OnlineGalleryController@photoGallery')->name('PhotoGallery');
+Route::get('/onlinegallery/photos/{id}','Pages\OnlineGalleryController@showPhoto')->name('ShowPhoto');
+
+Route::get('/onlinegallery/videos','Pages\OnlineGalleryController@videoGallery')->name('VideoGallery');
+Route::get('/onlinegallery/videos/{id}','Pages\OnlineGalleryController@playVideo')->name('PlayVideo');
+
+Route::get('/onlinegallery/audios','Pages\OnlineGalleryController@audioGallery')->name('AudioGallery');
+Route::get('/onlinegallery/audios/{id}','Pages\OnlineGalleryController@playAudio')->name('PlayAudio');
+
+//Election Committee
+Route::resource('/admin/electioncommittee','Admin\ElectionCommitteeController');
+//member active and inactive
+Route::get('/admin/electioncommittee/{id}/active','Admin\PresentStateController@active')->name('Active');
+Route::get('/admin/electioncommittee/{id}/inactive','Admin\PresentStateController@inactive')->name('Inactive');
 
 /* Quick Links */
 //Party Constitution

@@ -17,7 +17,7 @@
     <div class="card">
         <form role="form" action="{{ route('feedback.store')}}" method="POST">
             @csrf
-            <div class="card-body">
+            <div class="card-body" style="background-color: #fff3e6;">
                 <div class="form-group">
                     <label for="fullname">Fullname</label>
                     <input name="fullname" type="text" class="form-control feedback-ao" id="fullname" value="{{ old('fullname')}}" placeholder="Enter your fullname">

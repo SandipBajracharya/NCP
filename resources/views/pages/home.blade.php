@@ -3,7 +3,7 @@
 @section('content')
 {{-- <div class="container"> --}}
     @include('messages.message')
-    <h4><strong>{{__('Leaders')}}</strong></h4>
+    <h4><strong>{{__('Home')}}</strong></h4>
     @if($leaders)
     <div class="row px-2">
         <div class="col-md-2 card-lg-2 col-4 px-1">
@@ -70,7 +70,14 @@
             </div>
 
             <div id="tab2" class="container tab-pane fade"><br>
-              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="card-body">
+                    <h6>Upcomming Events Titles</h6>
+                    Title of upcoming events with description
+                    <div class="pt-3">
+                        <small>{{$content->created_at->format('d M Y')}}</small>
+                        <a href="/upcomingevents" target=_blank class="float-right"> {{__('more')}} >></a>
+                    </div>
+                </div>
             </div>
         </div>
         @endif

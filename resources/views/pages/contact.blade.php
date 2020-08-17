@@ -3,7 +3,7 @@
 @section('content')
     <h4><strong>Contacts</strong></h5>
     <div class="card">
-        <div class="card-body">
+        <div class="card-body" style="background-color: #fff3e6;">
             <h5>Nepali Congress Central Office</h5>
             <p>B.P. Smriti Bhawan, B.P. Nagar <br>
                 Lalitpur, Nepal.

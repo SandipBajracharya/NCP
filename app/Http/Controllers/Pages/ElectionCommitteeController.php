@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Pages;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\ElectionCommittee;
 
 class ElectionCommitteeController extends Controller
 {
@@ -12,8 +13,10 @@ class ElectionCommitteeController extends Controller
         return view('pages.electionCommittee');    
     }
 
-    public function showChetra()
+    public function showChetra($id)
     {
-        return view('pages.ElectionCommittee.chettraOne');
+        $members = ElectionCommittee::where('chettra_number', '=', $id)
+                                    ->where('status', '=', 1)->get();
+        return view('pages.ElectionCommittee.chettra', ['members' => $members, 'number' => $id]);
     }
 }

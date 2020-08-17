@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Request;
 use App\OnlineGallery;
 
@@ -15,7 +16,8 @@ class OnlineGalleryController extends Controller
      */
     public function index()
     {
-        return view();
+        $gallery = OnlineGallery::orderBy('created_at','desc')->get();
+        return view('admin.OnlineGallery.galleryIndex', ['gallery' => $gallery]);
     }
 
     /**
@@ -25,7 +27,7 @@ class OnlineGalleryController extends Controller
      */
     public function create()
     {
-        return view('admin.OnlineGallery.create');
+        return view('admin.OnlineGallery.galleryForm');
     }
 
     /**
@@ -83,7 +85,7 @@ class OnlineGalleryController extends Controller
         $gallery->file = $FileToStore1;
         $gallery->radio = $request->input('radio');
         $gallery->save();
-        //storing the file
+        //storing the file in storage directory
         $path1 = $request->file('file')->storeAs('/public/OnlineGallery/'.$gallery->gallery_type, $FileToStore1);  
 
         return redirect()->back()->with('success', $gallery->gallery_type.' stored');
@@ -97,7 +99,8 @@ class OnlineGalleryController extends Controller
      */
     public function show($id)
     {
-        //
+        $item = OnlineGallery::find($id);
+        return view('admin.OnlineGallery.galleryShow', ['item' => $item]);
     }
 
     /**
@@ -108,7 +111,7 @@ class OnlineGalleryController extends Controller
      */
     public function edit($id)
     {
-        //
+        
     }
 
     /**
@@ -131,6 +134,14 @@ class OnlineGalleryController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $item = OnlineGallery::find($id);
+        
+        if($item->file != "nocontent.jpg"){
+            Storage::delete('/public/OnlineGallery/'.$item->gallery_type.'/'.$item->file);
+        }
+
+        $item->delete();
+
+        return redirect('/admin/onlinegallery')->with('success','Item deleted.');
     }
 }

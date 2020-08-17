@@ -11,12 +11,12 @@ class FeedbackController extends Controller
     
     public function __construct()
     {
-        $this->middleware(['auth'], ['except'=>'create']);
+        $this->middleware(['auth'], ['except'=>['create', 'store']]);
     }
 
     public function index()
     {
-        $feedbacks = Feedback::orderBy('created_at','asc')->get();
+        $feedbacks = Feedback::orderBy('created_at','desc')->get();
         // return $feedbacks;
         return view('admin.Feedback.feedbackList',['feedbacks' => $feedbacks]);
     }
@@ -41,7 +41,7 @@ class FeedbackController extends Controller
     {
         $this->validate($request, [
             'fullname' => 'required|string|min:4|max:255',
-            'phone' => 'required|regex:/[0-9]/|not_regex:/[a-z]/|min:7|max:13',
+            'phone' => 'required|regex:/[0-9]/|not_regex:/[a-zA-Z]/|min:7|max:13',
             'email' => 'required|email|unique:feedback|string|max:255',
             'feedback' => 'required|string|min:10',
         ]);
@@ -111,7 +111,7 @@ class FeedbackController extends Controller
      */
     public function edit($id)
     {
-        //
+        // no edit
     }
 
     /**
@@ -123,7 +123,7 @@ class FeedbackController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        // no update
     }
 
     /**

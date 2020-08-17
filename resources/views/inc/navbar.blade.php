@@ -20,7 +20,7 @@
                     <a class="nav-link" href="/relatedlinks">{{ __('Related Links')}}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">{{ __('Online Gallery')}}</a>
+                    <a class="nav-link" href="/onlinegallery">{{ __('Online Gallery')}}</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/feedback/create">{{ __('Feedback')}}</a>

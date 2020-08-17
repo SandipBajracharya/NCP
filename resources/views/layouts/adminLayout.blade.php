@@ -192,6 +192,30 @@
                   </li>
                 </ul>
               </li>
+              <li class="nav-item has-treeview">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-image"></i>
+                  <p>
+                    Online Gallery
+                    <i class="fas fa-angle-left right"></i>
+                    <span class="badge badge-info right">2</span>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="/admin/onlinegallery/create" class="nav-link">
+                      <i class="far fa-square nav-icon"></i>
+                      <p>Create</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/admin/onlinegallery" class="nav-link">
+                      <i class="far fa-square nav-icon"></i>
+                      <p>Content List</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
               <li class="nav-item">
                 <a href="/feedback" class="nav-link">
                   <i class="nav-icon fas fa-comments"></i>
@@ -199,6 +223,30 @@
                     Feedbacks
                   </p>
                 </a>
+              </li>
+              <li class="nav-item has-treeview">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-users"></i>
+                  <p>
+                    Election Committee
+                    <i class="fas fa-angle-left right"></i>
+                    <span class="badge badge-info right">2</span>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="/admin/electioncommittee/create" class="nav-link">
+                      <i class="far fa-square nav-icon"></i>
+                      <p>Create</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/admin/electioncommittee" class="nav-link">
+                      <i class="far fa-square nav-icon"></i>
+                      <p>Content List</p>
+                    </a>
+                  </li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a href="/admin/contacts" class="nav-link">
@@ -284,5 +332,11 @@
     <script src="{{ asset('Admin/dist/js/pages/dashboard.js')}}"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="{{ asset('Admin/dist/js/demo.js')}}"></script>
+
+    {{-- laravel ckeditor --}}
+    <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace( 'article-ckeditor' );
+    </script>
   </body>
 </html>
