@@ -18,6 +18,7 @@ class CreateHistoriesTable extends Migration
             $table->longText('background');
             $table->longText('genesis_of_NC');
             $table->longText('imp_landmarks');
+            $table->longText('achivements');
             $table->longText('organizational_structure');
             $table->longText('party_ideology');
             $table->timestamps();

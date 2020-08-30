@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <h4><strong> Related Links</strong></h4>
+    <h4><strong> {{__('Related Links')}}</strong></h4>
     <div class="card" style="background-color: #fff3e6;">
         <div class="card-body">
             @if(count($links)>0)

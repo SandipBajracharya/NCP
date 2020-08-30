@@ -2,6 +2,13 @@
 
 @section('content')
 {{-- <div class="container"> --}}
+    {{-- sidebar for device width less than 640px --}}
+    <div class="sidebar">
+        <h4><strong> {{__('Quick Links')}}</strong></h4>
+        @include('inc.sidebar')
+    </div>
+    {{-- end sidebar --}}
+
     @include('messages.message')
     <h4><strong>{{__('Home')}}</strong></h4>
     @if($leaders)
@@ -16,30 +23,30 @@
         </div>
         <div class="col-md-2 card-lg-2 col-4 px-1">
             <img src="/storage/DistrictLeaders/noimage.jpg" style="" class="card-img-top district-leaders p-1">
-            <p class="text-center">{{__('Member1')}}</p>
+            <p class="text-center">{{__('District Secretary')}}</p>
         </div>
         <div class="col-md-2 card-lg-2 col-4 px-1">
             <img src="/storage/DistrictLeaders/noimage.jpg" style="" class="card-img-top district-leaders p-1">
-            <p class="text-center">{{__('Member2')}}</p>
+            <p class="text-center">{{__('District Secretary')}}</p>
         </div>
         <div class="col-md-2 card-lg-2 col-4 px-1">
             <img src="/storage/DistrictLeaders/noimage.jpg" style="" class="card-img-top district-leaders p-1">
-            <p class="text-center">{{__('Member3')}}</p>
+            <p class="text-center">{{__('Treasurer')}}</p>
         </div>
         <div class="col-md-2 card-lg-2 col-4 px-1">
             <img src="/storage/DistrictLeaders/noimage.jpg" style="" class="card-img-top district-leaders p-1">
-            <p class="text-center">{{__('Member4')}}</p>
+            <p class="text-center">{{__('Joint Secretary')}}</p>
         </div>
     </div>
     @endif
     <hr>
-    {{-- <div class="col-sm-12">
-        <div class="row justify-content-between px-3">
-            <a href="" class="btn btn-info btn-sm">Election Committee</a>
-            <a href="" class="btn btn-outline-danger btn-sm">Election Committee</a>
-            <a href="" class="btn btn-outline-success btn-sm">Donate</a>
+    <div class="col-sm-12 mb-3">
+        <div class="row justify-content-between">
+            <a href="/electioncommittee" class="btn btn-success btn-sm">Election Committee</a>
+            <a href="" class="btn btn-outline-danger btn-sm">Prachar Samiti</a>
+            <a href="" class="btn btn-outline-success btn-sm">Donation</a>
         </div>
-    </div> --}}
+    </div>
     <div class="card">
         <ul class="nav nav-tabs">
             <li class="nav-item">
@@ -75,7 +82,7 @@
                     Title of upcoming events with description
                     <div class="pt-3">
                         <small>{{$content->created_at->format('d M Y')}}</small>
-                        <a href="/upcomingevents" target=_blank class="float-right"> {{__('more')}} >></a>
+                        <a href="/upcomingevent/lists" class="float-right"> {{__('more')}} >></a>
                     </div>
                 </div>
             </div>

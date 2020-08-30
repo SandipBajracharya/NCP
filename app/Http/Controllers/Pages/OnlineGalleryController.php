@@ -39,9 +39,8 @@ class OnlineGalleryController extends Controller
         $video = OnlineGallery::find($id);
         $fileContents = Storage::disk('local')->get("/public/OnlineGallery/Video/$video->file");
         // $fileContents = Storage::files(public_path('storage/OnlineGallery/Video/'.$video->file));
-        $response = Response::make($fileContents, 200);
-        $response->header('Content-Type', "video/mp4");
-        return $response;
+        return  response($fileContents)
+                    ->header('Content-Type', "video/mp4");;
     }
 
     public function audioGallery()
@@ -55,8 +54,7 @@ class OnlineGalleryController extends Controller
         $audio = OnlineGallery::find($id);
         $fileContents = Storage::disk('local')->get("/public/OnlineGallery/Audio/$audio->file");
         // $fileContents = Storage::get('/storage/OnlineGallery/Audio/'.$audio->file);
-        $response = Response::make($fileContents, 200);
-        $response->header('Content-Type', "audio/mpeg");
-        return $response;
+        return  response($fileContents)
+                    ->header('Content-Type', "audio/mpeg");
     }
 }

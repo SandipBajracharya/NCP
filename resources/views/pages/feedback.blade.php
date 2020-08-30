@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <h4><strong>Feedback</strong></h4>
+    <h4><strong>{{__('Feedback')}}</strong></h4>
 
     @if ($errors->any())
         <div class="alert alert-danger">

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <h4><strong>Contacts</strong></h5>
+    <h4><strong>{{__('Contacts')}}</strong></h5>
     <div class="card">
         <div class="card-body" style="background-color: #fff3e6;">
             <h5>Nepali Congress Central Office</h5>

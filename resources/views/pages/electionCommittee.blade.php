@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <h4><strong>Election Committee</strong></h4>
+    <h4><strong>{{__('Election Committee')}}</strong></h4>
     <div class="card">
         <div class="card-body" style="background-color: #fff3e6;">
             <div class="row">

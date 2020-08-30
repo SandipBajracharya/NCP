@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <h4><strong> Online Gallery</strong></h4>
+    <h4><strong> {{__('Online Gallery')}}</strong></h4>
     <div class="card" style="background-color: #fff3e6;">
         <div class="card-body">
             <ul class="liststyle anchorstyle pl-0 mb-0">

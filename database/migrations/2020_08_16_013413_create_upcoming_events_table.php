@@ -15,6 +15,8 @@ class CreateUpcomingEventsTable extends Migration
     {
         Schema::create('upcoming_events', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->string('pdf')->nullable();
             $table->timestamps();
         });
     }

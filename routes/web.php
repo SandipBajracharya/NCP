@@ -16,6 +16,8 @@ use Illuminate\Support\Facades\Route;
 // Route::redirect('/','/en');
 
 // Route::group(['prefix'=>'{language}'], function () {
+
+    //pages
 Route::get('/', 'Pages\HomeController@index')->name('home');
 
 Route::get('/introduction', 'Pages\IntroductionController@index')->name('introduction');
@@ -28,6 +30,7 @@ Route::get('/electioncommittee','Pages\ElectionCommitteeController@showIndex')->
 Route::get('/electioncommittee/chettra/{id}','Pages\ElectionCommitteeController@showChetra')->name('electionCommitteeChetra');
 
 
+
 /*  Admin   */
 Route::get('/dashboard', function (){
     return view('admin.Dashboard');
@@ -37,11 +40,17 @@ Route::group(['prefix' => 'NCadmin'], function() {
     Auth::routes();
 });
 
+//scraping
+Route::get('/scrape','Admin\ScrapperController@get_data');
+
 //press release
 Route::resource('/pressrelease','Admin\PressReleaseController');
 
 //Upcoming Events
 Route::resource('/upcomingevents','Admin\UpcomingEventsController');
+//Upcoming events pages
+Route::get('/upcomingevent/lists', 'Pages\UpcomingEventsController@showEvents')->name('UpcomingEvents.list');
+Route::get('/upcomingevent/lists/{id}', 'Pages\UpcomingEventsController@showFile')->name('UpcomingEvents.file');
 
 //introduction
 Route::get('/admin/introduction','Admin\IntroductionController@introductionForm')->name('introductionForm');

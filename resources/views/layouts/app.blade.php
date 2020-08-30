@@ -18,6 +18,7 @@
 
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
+    <link href="/css/home.css" rel="stylesheet">
 
     {{-- Font Awesome --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -94,7 +95,7 @@
         <main class="container p-4">
             <div class="row">
 
-                <div class="col-md-3 col-sm-3">
+                <div class="col-md-3 col-lg-3 quick-links">
                 <h4><strong> {{__('Quick Links')}}</strong></h4>
                     @include('inc.sidebar')
                 </div>

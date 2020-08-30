@@ -137,22 +137,22 @@
                       <a href="#" class="nav-link">
                         <i class="fa fa-calendar nav-icon" aria-hidden="true"></i>
                         <p>
-                          upcoming Events 
+                          Upcoming Events 
                           <i class="fas fa-angle-left right"></i>
                           <span class="badge badge-info right">2</span>
                         </p>
                       </a>
                       <ul class="nav nav-treeview">
                         <li class="nav-item">
-                          <a href="#" class="nav-link">
+                          <a href="/upcomingevents/create" class="nav-link">
                             <i class="far fa-square nav-icon"></i>
                             <p>Create</p>
                           </a>
                         </li>
                         <li class="nav-item">
-                          <a href="#" class="nav-link">
+                          <a href="/upcomingevents" class="nav-link">
                             <i class="far fa-square nav-icon"></i>
-                            <p>Edit</p>
+                            <p>Content List</p>
                           </a>
                         </li>
                       </ul>
